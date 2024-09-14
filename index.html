@@ -4,8 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section class="header content">
+        
+        <div class="header__box ">
+            <h1 class="header__header">Добро пожаловать <br> на мой сайт мини-игр</h1>
+            <p class="header__paragraph">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
+            <button class="header__button">Поехали!</button>
+            
+        </div>
+        
+    </section>
+    <div class="headerFooter">
+            
+    </div>
+    <section class="games content">
+        <h2 class="games__header">Об играх</h2>
+        <p class="games__paragraph">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</p>
+        <div class="games__table">
+            <div class="games__column">
+                <article class="games__box">
+                    <div class="games__bg-img"></div>
+                    <p class="games__number">Игра № 1</p>
+                    <h3 class="games__name">Угадай число</h3>
+                </article>
+                <article class="games__box">
+                    <div class="games__bg-img4"></div>
+                    <p class="games__number">Игра №4</p>
+                    <h3 class="games__name games__name_big">Камень, ножницы,  бумага</h3>
+                </article>
+            </div>
+            <div class="games__column">
+                <article class="games__box">
+                    <div class="games__bg-img2"></div>
+                    <p class="games__number">Игра №2</p>
+                    <h3 class="games__name">Простая арифметика</h3>
+                </article>
+
+                <article class="games__box">
+                    <div class="games__bg-img5"></div>
+                    <p class="games__number">Игра №5</p>
+                    <h3 class="games__name games__name_big">Простая викторина</h3>
+                </article>
+            </div>
+            <div class="games__column">
+                <article class="games__box">
+                    <div class="games__bg-img3"></div>
+                    <p class="games__number">Игра №3</p>
+                    <h3 class="games__name">Переверни текст</h3>
+                </article>
+                <article class="games__box">
+                    <div class="games__bg-img6"></div>
+                    <p class="games__number">Игра №6</p>
+                    <h3 class="games__name games__name_big">Генератор случайных цветов</h3>
+                </article>
+
+            </div>
+            
+        </div>    
+
+    </section>
+    <section class="mini-games content">
+        <h2 class="mini-games__header">Мини-игры</h2>
+        <div class="mini-games__table">
+            <img class="mini-games__img" src="./img/mini-games-bg.png" alt="stars">
+            <img class="mini-games__img_revers" src="./img/mini-games-bg2.png" alt="stars">
+            <article class="mini-games__box">
+                <div class="mini-games__description">
+                    <h3 class="mini-games__name">Угадай число</h3>
+                    <p class="mini-games__paragraph">Попробуй угадать случайное число от 1 до 100.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <div class="mini-games__bg-img"></div>
+            </article>
+            <article class="mini-games__box_revers">
+                <div class="mini-games__bg-img2"></div>
+                <div class="mini-games__description_revers">
+                    <h3 class="mini-games__name">Простая арифметика</h3>
+                    <p class="mini-games__paragraph">Попробуй решить простые арифметические задачи.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                
+            </article>
+            <article class="mini-games__box">
+                <div class="mini-games__description">
+                    <h3 class="mini-games__name">Переверни текст</h3>
+                    <p class="mini-games__paragraph">Попробуй ввести текст, который будет перевернут.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <div class="mini-games__bg-img3"></div>
+            </article>
+            <article class="mini-games__box_revers">
+                <div class="mini-games__bg-img4"></div>
+                <div class="mini-games__description_revers">
+                    <h3 class="mini-games__name">Викторина</h3>
+                    <p class="mini-games__paragraph">Отвечай на вопросы викторины с вариантами ответов.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+            </article>
+            <article class="mini-games__box">
+                <div class="mini-games__description">
+                    <h3 class="mini-games__name">Камень,<br> ножницы,<br> бумага</h3>
+                    <p class="mini-games__paragraph">Сыграй в популярную игру против компьютера.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+                <div class="mini-games__bg-img5"></div>
+            </article>
+            <article class="mini-games__box_revers">
+                <div class="mini-games__bg-img6"></div>
+                <div class="mini-games__description_revers">
+                    <h3 class="mini-games__name">Генератор<br> случайных<br> цветов</h3>
+                    <p class="mini-games__paragraph">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <button class="mini-games__button">Играть!</button>
+                </div>
+            </article>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <h4 class="footer__header">Все права защищены.</h4>
+    </footer>
 </body>
 </html>
