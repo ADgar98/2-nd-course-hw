@@ -14,10 +14,9 @@ body {
 
 .header {
   background-color: rgb(225, 255, 143);
-  background-image: url(./img/head-bg2.png);
+  background-image: url(./img/head-bg.png), url(./img/head-bg-star.png), url(./img/head-bg-star1.png);
   background-repeat: no-repeat;
-  background-position: -7% 90%;
-  background-size: auto;
+  background-position: right 0px, 70% 85%, 63px 69px;
 }
 .header__box {
   padding-top: 196px;
@@ -65,10 +64,9 @@ body {
 
 .games {
   background-color: rgb(32, 32, 39);
-  background-image: url(./img/games-bg.png);
+  background-image: url(./img/game-bg-star1.png), url(./img/game-bg-star2.png);
   background-repeat: no-repeat;
-  background-position: 80% 10%;
-  background-size: auto;
+  background-position: right 15%, 25px 770px;
 }
 .games__header {
   color: rgb(255, 255, 255);
@@ -97,7 +95,6 @@ body {
   row-gap: 32px;
 }
 .games__bg-img {
-  display: block;
   background-image: url(./img/gm1.png);
   background-color: rgb(173, 97, 255);
   background-position: center;
@@ -127,7 +124,6 @@ body {
   width: 200px;
 }
 .games__bg-img2 {
-  display: block;
   background-image: url(./img/gm2.png);
   background-color: rgb(253, 173, 0);
   background-position: center;
@@ -137,7 +133,6 @@ body {
   border-radius: 30px;
 }
 .games__bg-img3 {
-  display: block;
   background-image: url(./img/gm3.png);
   background-color: rgb(86, 94, 239);
   background-position: center;
@@ -147,7 +142,6 @@ body {
   border-radius: 30px;
 }
 .games__bg-img4 {
-  display: block;
   background-image: url(./img/gm4.png);
   background-color: rgb(39, 26, 88);
   background-position: center;
@@ -157,7 +151,6 @@ body {
   border-radius: 30px;
 }
 .games__bg-img5 {
-  display: block;
   background-image: url(./img/gm5.png);
   background-color: rgb(153, 209, 0);
   background-position: center;
@@ -167,7 +160,6 @@ body {
   border-radius: 30px;
 }
 .games__bg-img6 {
-  display: block;
   background-image: url(./img/gm6.png);
   background-color: rgb(39, 26, 88);
   background-position: center;
@@ -177,9 +169,12 @@ body {
   border-radius: 30px;
 }
 .games__box {
+  display: block;
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   transition: all 0.5s;
+  font: inherit;
+  text-decoration: none;
 }
 .games__box:hover {
   transform: scale(1.1);
@@ -187,6 +182,9 @@ body {
 
 .mini-games {
   background-color: rgb(32, 32, 39);
+  background-image: url(./img/mini-games-bg.png), url(./img/mini-games-bg2.png);
+  background-repeat: no-repeat;
+  background-position: 98% 4%, 98% 99%;
 }
 .mini-games__header {
   color: rgb(255, 255, 255);
@@ -202,16 +200,6 @@ body {
   row-gap: 32px;
   padding-bottom: 144px;
   position: relative;
-}
-.mini-games__img {
-  position: absolute;
-  top: -3%;
-  left: 96%;
-}
-.mini-games__img_revers {
-  position: absolute;
-  top: 96%;
-  left: 96%;
 }
 .mini-games__box {
   background-color: rgb(255, 255, 255);
