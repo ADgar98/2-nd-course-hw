@@ -97,6 +97,7 @@ body {
   row-gap: 32px;
 }
 .games__bg-img {
+  display: block;
   background-image: url(./img/gm1.png);
   background-color: rgb(173, 97, 255);
   background-position: center;
@@ -126,6 +127,7 @@ body {
   width: 200px;
 }
 .games__bg-img2 {
+  display: block;
   background-image: url(./img/gm2.png);
   background-color: rgb(253, 173, 0);
   background-position: center;
@@ -135,6 +137,7 @@ body {
   border-radius: 30px;
 }
 .games__bg-img3 {
+  display: block;
   background-image: url(./img/gm3.png);
   background-color: rgb(86, 94, 239);
   background-position: center;
@@ -144,6 +147,7 @@ body {
   border-radius: 30px;
 }
 .games__bg-img4 {
+  display: block;
   background-image: url(./img/gm4.png);
   background-color: rgb(39, 26, 88);
   background-position: center;
@@ -153,6 +157,7 @@ body {
   border-radius: 30px;
 }
 .games__bg-img5 {
+  display: block;
   background-image: url(./img/gm5.png);
   background-color: rgb(153, 209, 0);
   background-position: center;
@@ -162,6 +167,7 @@ body {
   border-radius: 30px;
 }
 .games__bg-img6 {
+  display: block;
   background-image: url(./img/gm6.png);
   background-color: rgb(39, 26, 88);
   background-position: center;
