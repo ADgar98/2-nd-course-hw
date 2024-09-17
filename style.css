@@ -21,8 +21,6 @@ body {
 .header__box {
   padding-top: 196px;
   padding-bottom: 156px;
-  padding-left: 120px;
-  padding-right: 120px;
   max-width: 768px;
 }
 .header__header {
@@ -45,15 +43,16 @@ body {
   padding: 16px 65px 16px 65px;
   border: 1px solid black;
   border-radius: 60px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
   outline: none;
   font-weight: 600;
   font-size: 24px;
   transition: all 0.5s;
 }
 .header__button:hover {
-  background-color: rgb(32, 32, 39);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
   cursor: pointer;
 }
 
@@ -240,7 +239,8 @@ body {
   font: inherit;
   outline: none;
   border: 1px solid rgb(32, 32, 39);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
   border-radius: 60px;
   max-width: 235px;
   font-weight: 600;
@@ -249,8 +249,8 @@ body {
   transition: all 0.5s;
 }
 .mini-games__button:hover {
-  background-color: rgb(32, 32, 39);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
   cursor: pointer;
 }
 .mini-games__bg-img {
@@ -325,4 +325,129 @@ body {
   text-align: center;
   padding-top: 61px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    background-image: url(./img/head-bg-mob.png), url(./img/head-bg-mob1.png), url(./img/head-bg-mob2.png);
+    background-position: right 0, 37px 64px, 90% 95%;
+  }
+  .header__box {
+    padding-top: 147px;
+    padding-bottom: 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__header {
+    line-height: 48px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .header__paragraph {
+    text-align: center;
+    font-size: 16px;
+    min-width: 290px;
+  }
+  .header__button {
+    font-size: 16px;
+    padding: 16px 103px 16px 103px;
+  }
+  .headerFooter {
+    height: 51px;
+  }
+  .games {
+    display: none;
+  }
+  .mini-games {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mini-games__place {
+    width: 343px;
+  }
+  .mini-games__header {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: start;
+    padding-top: 37px;
+    padding-bottom: 48px;
+  }
+  .mini-games__table {
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 48px;
+  }
+  .mini-games__box {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 343px;
+  }
+  .mini-games__box_revers {
+    flex-direction: column;
+    width: 343px;
+  }
+  .mini-games__description {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  .mini-games__description_revers {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  .mini-games__name {
+    font-size: 32px;
+    line-height: 39px;
+    padding-bottom: 16px;
+  }
+  .mini-games__paragraph {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 32px;
+  }
+  .mini-games__button {
+    font-size: 16px;
+    max-width: 285px;
+    padding: 16px 105.5px 16px 105.5px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .mini-games__bg-img {
+    background-image: url(./img/gm1-mob.png);
+    max-width: 343px;
+    max-height: 285px;
+  }
+  .mini-games__bg-img2 {
+    background-image: url(./img/gm2-mob.png);
+    max-width: 343px;
+    max-height: 285px;
+  }
+  .mini-games__bg-img3 {
+    background-image: url(./img/gm3-mob.png);
+    max-width: 343px;
+    max-height: 285px;
+  }
+  .mini-games__bg-img4 {
+    background-image: url(./img/gm4-mob.png);
+    max-width: 343px;
+    max-height: 285px;
+  }
+  .mini-games__bg-img5 {
+    background-image: url(./img/gm5-mob.png);
+    max-width: 343px;
+    max-height: 285px;
+  }
+  .mini-games__bg-img6 {
+    background-image: url(./img/gm6-mob.png);
+    max-width: 343px;
+    max-height: 285px;
+  }
+  .footer__header {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

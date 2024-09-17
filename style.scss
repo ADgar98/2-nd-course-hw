@@ -34,11 +34,7 @@ $fourth-color:rgb(255, 255, 255);
     &__box{
         padding-top: 196px;
         padding-bottom: 156px;
-        padding-left: 120px;
-        padding-right: 120px;
         max-width: 768px;
-        
-
     }
     &__header{
         font-size: $h1-size;
@@ -61,14 +57,15 @@ $fourth-color:rgb(255, 255, 255);
         padding: 16px 65px 16px 65px;
         border: 1px solid black;
         border-radius: 60px;
-        background-color: $fourth-color;
+        background-color: $first-color;
+        color: $fourth-color;
         outline: none;
         font-weight: $textBold-weight;
         font-size: $text-size;
         transition: all 0.5s;
         &:hover{
-            background-color: $first-color;
-            color: $fourth-color;
+            background-color: $fourth-color;
+            color: $first-color;
             cursor: pointer;
         }
 
@@ -233,13 +230,10 @@ $fourth-color:rgb(255, 255, 255);
         border-radius: 30px;
         display: flex;
         justify-content: space-between;
-        
         &_revers{
             background-color: $fourth-color;
             border-radius: 30px;
             display: flex;
-            
-            
         }
     }
     &__description{
@@ -271,7 +265,8 @@ $fourth-color:rgb(255, 255, 255);
         font: inherit;
         outline: none;
         border: 1px solid $first-color;
-        background-color: $fourth-color;
+        background-color: $first-color;
+        color: $fourth-color;
         border-radius: 60px;
         max-width: 235px;
         font-weight: $textBold-weight;
@@ -279,8 +274,8 @@ $fourth-color:rgb(255, 255, 255);
         line-height: 141%;
         transition: all 0.5s;
         &:hover{
-            background-color: $first-color;
-            color: $fourth-color;
+            background-color: $fourth-color;
+            color: $first-color;
             cursor: pointer;
         }
     }
@@ -359,3 +354,4 @@ $fourth-color:rgb(255, 255, 255);
         padding-bottom: 60px;
     }
 }
+@import'phone';
