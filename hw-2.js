@@ -1,11 +1,11 @@
-let password= 'Пароль';
+let password = 'Пароль';
 let a = prompt('Введите пароль');
 
 
 if (a == password) {
     alert('Пароль введен верно')
  } else {
-    alert('Пароль введен неправильно')//
+    alert('Пароль введен неправильно')
  }
 
 let c = 0;
