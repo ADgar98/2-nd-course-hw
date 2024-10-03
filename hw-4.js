@@ -106,3 +106,34 @@ let checkingNumber = () =>{
     return userNumber
 }
 let checkUser = checkingNumber();
+
+// Задание 7
+
+const circle1 = {
+    radius: 3,
+    getArea (){
+        let Area = 2 * 3.14 * this.radius;
+        console.log(Area);
+    },
+    getPerimeter (){
+        let Perimeter = 3.14 * (this.radius ** 2);
+        console.log(Perimeter);
+
+    }
+}
+const circle2 = {
+    radius: 4,
+    getArea (){
+        let Area = 2 * 3.14 * this.radius;
+        console.log(Area);
+    },
+    getPerimeter (){
+        let Perimeter = 3.14 * (this.radius ** 2);
+        console.log(Perimeter);
+
+    }
+} 
+circle1.getArea();
+circle1.getPerimeter();
+circle2.getArea();
+circle2.getPerimeter();
