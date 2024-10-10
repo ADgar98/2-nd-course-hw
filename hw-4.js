@@ -16,6 +16,8 @@ function getRandomInt(min, max) {
             alert('Увы и ах! Давай снова, ты был близок, твое число меньше, попробуй снова')
          } else if (randNum < userNum) {
             alert('Увы и ах! Давай снова, ты был близок, твое число больше, попробуй снова')
+         } else if (isNaN(userNum)) {
+            alert('Введи число')
          } else {
             alert('Угадал!')
             break
