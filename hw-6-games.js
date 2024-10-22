@@ -45,7 +45,7 @@ function funcQuiz (j) {
     for (let i = 0; i < 10; i++) {
         let firstQuestion = Number(prompt(`Ответьте на вопрос ${quiz[j]['question']} варианты ответов: ${quiz[j]['options']}`));
     if (firstQuestion == '') {
-        alert('Дайте ответ)')
+        alert('Дайте ответ')
     } else if (firstQuestion === quiz[j]['correctAnswer']){
         userAnswerQuiz.push(1);
         break;
