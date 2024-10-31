@@ -14,13 +14,28 @@
         <div class="header__box ">
             <h1 class="header__header">Добро пожаловать <br> на мой сайт мини-игр</h1>
             <p class="header__paragraph">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
-            <button class="header__button">Поехали!</button>
+            <a class="header__button" href="#gameSect">Поехали!</a>
+            <a class="header__button_mob" href="#mini-gamesSect">Поехали!</a>
+            
         </div>
     </section>
     <div class="headerFooter">
-            
+            <div class="headerFooter__animBox">
+                <h3 class="headerFooter__game">ВИКТОРИНА</h3>
+            <img class="headerFooter__img" src="./img/Star_anim.png" alt="star">
+            <h3 class="headerFooter__game">УГАДАЙ ЧИСЛО</h3>
+            <img class="headerFooter__img" src="./img/Star_anim.png" alt="star">
+            <h3 class="headerFooter__game">ПЕРЕВЕРНИ ТЕКСТ</h3>
+            <img class="headerFooter__img" src="./img/Star_anim.png" alt="star">
+            <h3 class="headerFooter__game">ПРОСТАЯ АРИФМЕТИКА</h3>
+            <img class="headerFooter__img" src="./img/Star_anim.png" alt="star">
+            <h3 class="headerFooter__game">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</h3>
+            <img class="headerFooter__img" src="./img/Star_anim.png" alt="star">
+            <h3 class="headerFooter__game">ГЕНЕРАТОР СЛУЧАЙНЫХ ЧИСЕЛ</h3>
+            <img class="headerFooter__img" src="./img/Star_anim.png" alt="star">
+            </div>
     </div>
-    <section class="games content">
+    <section id="gameSect" class="games content">
         <h2 class="games__header">Об играх</h2>
         <p class="games__paragraph">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</p>
         <div class="games__table">
@@ -66,7 +81,7 @@
         </div>    
 
     </section>
-    <section class="mini-games content">
+    <section class="mini-games content" id="mini-gamesSect">
         <div class="mini-games__place"><h2 class="mini-games__header">Мини-игры</h2></div>
         <div class="mini-games__table">
             <article class="mini-games__box" id="GuessNumber">
@@ -114,8 +129,8 @@
                 <div class="mini-games__bg-img6"></div>
                 <div class="mini-games__description_revers">
                     <h3 class="mini-games__name">Генератор<br> случайных<br> цветов</h3>
-                    <p class="mini-games__paragraph">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                    <button class="mini-games__button">Играть!</button>
+                    <p class="mini-games__paragraph mini-games__paragraph_colors">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <button class="mini-games__button" id="randomColorsBtn">Играть!</button>
                 </div>
             </article>
         </div>
@@ -133,5 +148,7 @@
     <script src="./hw-6-games.js"></script>
     <script src="./hw-7.js"></script>
     <script src="./hw-7-game.js"></script>
+    <script src="./hw-game.js"></script>
+    <script src="./scroll.js"></script>
 </body>
 </html>

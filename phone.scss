@@ -20,16 +20,31 @@
     &__paragraph{
         text-align: center;
         font-size: 16px;
-        min-width: 290px;
+        max-width: 300px;
     }
     &__button{
-        
-        font-size: 16px;
-        padding: 16px 103px 16px 103px;
+        display: none;
+        &_mob{
+            display: block;
+            font-size: 16px;
+            padding: 16px 103px 16px 103px;
+        }
     }
 }
 .headerFooter{
-    height: 51px;
+    
+    &__animBox{
+        animation: anim-to-left-mob 40s infinite;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        gap: 27px;
+    }
+    &__game{
+        font-size: 16px;
+    }
+    &__img{
+        height: 27px;
+    }
 }
 .games{
     display: none;
@@ -82,6 +97,9 @@
         font-size: 16px;
         line-height: 20px;
         padding-bottom: 32px;
+        &_colors{
+            max-width: 240px;
+        }
     }
     &__button{
         font-size: 16px;
@@ -89,6 +107,10 @@
         padding: 16px 105.5px 16px 105.5px;
         margin-bottom: 32px;
         text-align: center;
+        &:hover{
+            background-color: $first-color;
+            color: $fourth-color;
+        }
     }
     &__bg-img{
         background-image: url(./img/gm1-mob.png);

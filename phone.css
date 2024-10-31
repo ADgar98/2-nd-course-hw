@@ -21,11 +21,24 @@
     min-width: 290px;
   }
   .header__button {
+    display: none;
+  }
+  .header__button_mob {
+    display: block;
     font-size: 16px;
     padding: 16px 103px 16px 103px;
   }
-  .headerFooter {
-    height: 51px;
+  .headerFooter__animBox {
+    animation: anim-to-left-mob 40s infinite;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 27px;
+  }
+  .headerFooter__game {
+    font-size: 16px;
+  }
+  .headerFooter__img {
+    height: 27px;
   }
   .games {
     display: none;

@@ -5,8 +5,25 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  transition: all 0.5s;
 }
 
+@keyframes anim-to-left {
+  from {
+    transform: translate(245%);
+  }
+  to {
+    transform: translate(-245%);
+  }
+}
+@keyframes anim-to-left-mob {
+  from {
+    transform: translate(270%);
+  }
+  to {
+    transform: translate(-270%);
+  }
+}
 .content {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -47,6 +64,7 @@ body {
   color: rgb(255, 255, 255);
   outline: none;
   font-weight: 600;
+  text-decoration: none;
   font-size: 24px;
   transition: all 0.5s;
 }
@@ -55,10 +73,40 @@ body {
   color: rgb(32, 32, 39);
   cursor: pointer;
 }
+.header__button_mob {
+  display: none;
+  font: inherit;
+  padding: 16px 65px 16px 65px;
+  border: 1px solid black;
+  border-radius: 60px;
+  background-color: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  outline: none;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.5s;
+}
 
 .headerFooter {
   background-color: rgb(188, 236, 48);
-  height: 90px;
+  overflow: hidden;
+}
+.headerFooter__animBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 51px;
+  animation: anim-to-left 30s infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.headerFooter__game {
+  font-weight: 700;
+  font-size: 30px;
+  white-space: nowrap;
 }
 
 .games {
@@ -347,14 +395,27 @@ body {
   .header__paragraph {
     text-align: center;
     font-size: 16px;
-    min-width: 290px;
+    max-width: 300px;
   }
   .header__button {
+    display: none;
+  }
+  .header__button_mob {
+    display: block;
     font-size: 16px;
     padding: 16px 103px 16px 103px;
   }
-  .headerFooter {
-    height: 51px;
+  .headerFooter__animBox {
+    animation: anim-to-left-mob 40s infinite;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 27px;
+  }
+  .headerFooter__game {
+    font-size: 16px;
+  }
+  .headerFooter__img {
+    height: 27px;
   }
   .games {
     display: none;
@@ -407,12 +468,19 @@ body {
     line-height: 20px;
     padding-bottom: 32px;
   }
+  .mini-games__paragraph_colors {
+    max-width: 400px;
+  }
   .mini-games__button {
     font-size: 16px;
     max-width: 285px;
     padding: 16px 105.5px 16px 105.5px;
     margin-bottom: 32px;
     text-align: center;
+  }
+  .mini-games__button:hover {
+    background-color: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
   }
   .mini-games__bg-img {
     background-image: url(./img/gm1-mob.png);

@@ -4,6 +4,7 @@
 }
 body{
     font-family: "Montserrat", sans-serif;
+    transition: all 0.5s;
 }
 $header-weight: 700;
 $h1-size: 64px;
@@ -21,6 +22,25 @@ $first-color: rgb(32, 32, 39);
 $second-color:rgb(188, 236, 48);
 $third-color:rgb(225, 255, 143);
 $fourth-color:rgb(255, 255, 255);
+
+@keyframes anim-to-left {
+    from {
+        transform: translate(245%);
+    }
+    
+    to {
+        transform: translate(-245%);
+    }
+  }
+  @keyframes anim-to-left-mob {
+    from {
+        transform: translate(270%);
+    }
+    
+    to {
+        transform: translate(-270%);
+    }
+  }
 
 .content{
     padding-left: calc(50% - 600px);
@@ -61,6 +81,7 @@ $fourth-color:rgb(255, 255, 255);
         color: $fourth-color;
         outline: none;
         font-weight: $textBold-weight;
+        text-decoration: none;
         font-size: $text-size;
         transition: all 0.5s;
         &:hover{
@@ -68,13 +89,45 @@ $fourth-color:rgb(255, 255, 255);
             color: $first-color;
             cursor: pointer;
         }
+        &_mob{
+            display: none;
+            font: inherit;
+        padding: 16px 65px 16px 65px;
+        border: 1px solid black;
+        border-radius: 60px;
+        background-color: $first-color;
+        color: $fourth-color;
+        outline: none;
+        font-weight: $textBold-weight;
+        text-decoration: none;
+        font-size: $text-size;
+        transition: all 0.5s;
+        }
 
 
     }
 }
 .headerFooter{
     background-color: $second-color;
-    height: 90px;
+    overflow: hidden;
+    &__animBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 51px;
+        animation: anim-to-left 30s infinite;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__game{
+        font-weight: $header-weight;
+        font-size: 30px;
+        white-space: nowrap;
+        
+
+    }
     
 }
 .games{
