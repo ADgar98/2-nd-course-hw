@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
     padding: 0;
 }
@@ -62,6 +62,7 @@ $fourth-color:rgb(255, 255, 255);
         line-height: $h1-height;
         padding-bottom: 24px;
         color: $first-color;
+        max-width: 660px;
         
     }
     &__paragraph{
@@ -92,16 +93,16 @@ $fourth-color:rgb(255, 255, 255);
         &_mob{
             display: none;
             font: inherit;
-        padding: 16px 65px 16px 65px;
-        border: 1px solid black;
-        border-radius: 60px;
-        background-color: $first-color;
-        color: $fourth-color;
-        outline: none;
-        font-weight: $textBold-weight;
-        text-decoration: none;
-        font-size: $text-size;
-        transition: all 0.5s;
+            padding: 16px 65px 16px 65px;
+            border: 1px solid black;
+            border-radius: 60px;
+            background-color: $first-color;
+            color: $fourth-color;
+            outline: none;
+            font-weight: $textBold-weight;
+            text-decoration: none;
+            font-size: $text-size;
+            transition: all 0.5s;
         }
 
 

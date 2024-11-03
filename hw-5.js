@@ -2,60 +2,7 @@
 
 // часть 1
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-        
-    let randNum1 = getRandomInt(1, 100);
-    let randNum2 = getRandomInt(1, 100);
-    console.log(randNum1);
-    console.log(randNum2);
-    let mathTask = () => {
-    const math = ['+', '-', '*', '/'];
-    
-    
-    // Получаем случайный ключ массива
-    let rand = Math.floor(Math.random() * math.length);
-    console.log(math[rand]);  // Выведет, например: JavaScript [1]
-    
-    let oper = math[rand]
-    
-    
-    
-    let task;
-    if (oper === '+') {
-        task = randNum1 + randNum2
-    } else if(oper === '-'){
-        task = randNum1 - randNum2
-    } else if(oper === '/'){
-        task = randNum1 / randNum2
-    } else if(oper === '*'){
-        task = randNum1 * randNum2
-    }
-     else {
-      alert('Обнови страницу')
-    }
-    
-    console.log(task);
-    
-    
-    
-    let i = 0
-    while (i < 100) {
-    let userAnswer = prompt(`Что получиться? ${randNum1 + oper + randNum2}`);
-    if (userAnswer / task == 1) {
-        alert(`Правильно ответ ${task}`)
-        break;
-    } else if (isNaN(userAnswer)){
-        alert('Введите число')
-    } else {
-        alert(`где-то ошибся, ответ ${task}`)
-    }
-    i++;
-    }
-    }
+
     
     // часть 2 
     

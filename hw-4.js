@@ -1,29 +1,6 @@
 // Функции - задание первая часть
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
 
-  let randNum = getRandomInt(1, 100);
-  console.log(randNum);
-
-  function Fun(){
-    for(let i = 0; i < 10; i++) {
-        let userNum = prompt('Введите случайное число от 1 до 100 у тебя 10 попыток!');
-        if (randNum > userNum) {
-            alert('Увы и ах! Давай снова, ты был близок, твое число меньше, попробуй снова')
-         } else if (randNum < userNum) {
-            alert('Увы и ах! Давай снова, ты был близок, твое число больше, попробуй снова')
-         } else if (isNaN(userNum)) {
-            alert('Введи число')
-         } else {
-            alert('Угадал!')
-            break
-         }
-    }
-}
 
 // Функции - задание вторая часть
 // задание 1 
