@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header_see{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Заголовок</h1>
+    <button class="btn">Скрыть</button>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, necessitatibus?</p>
+    <button class="pphBtn">Расскарсить</button>
+    <button class="header_text">Поменять заголовок</button>
+
+    <p class="description">обычный текст</p>
+    <p class="description">обычный текст</p>
+    <p class="description">обычный текст</p>
+    <p class="description">обычный текст</p>
+    <p class="description">обычный текст</p>
+
+    <p class="description1">старый текст</p>
+    <p>старый текст</p>
+    <p class="description1">старый текст</p>
+    <p>старый текст</p>
+    <p class="description1">старый текст</p>
+
+    <div class="box">
+
+    </div>
+    <button class="btnAdd">Добавить элемент</button>
+
+    <p class="description2">обычный текст</p>
+    <p class="description2">обычный текст</p>
+    <p class="description2">обычный текст</p>
+    <p class="description2">обычный текст</p>
+    <p class="description2">обычный текст</p>
+
+    <button class="btnDel">Удалить элемент</button>    
+
+    <script>
+        const headerSee = document.querySelector('.header');
+        const btnSee = document.querySelector('.btn');
+        const paragraphColor = document.querySelector('.paragraph');
+        const colorBtn = document.querySelector('.pphBtn');
+        const btnHeaderText = document.querySelector('.header_text');
+        const changeDescription = document.querySelectorAll('.description');
+        const changeDescriptionNew = document.querySelectorAll('.description1');
+        const btnAddText = document.querySelector('.btnAdd');
+        const boxDiv = document.querySelector('.box');
+        const btnDelPph = document.querySelector('.btnDel');
+
+
+
+        changeDescription.forEach(element => {
+            console.log(element)
+            element.textContent = 'Измененный текст!'
+        });
+        changeDescriptionNew.forEach(element => {
+            console.log(element)
+            element.textContent = 'Новый текст!'
+        });
+
+
+
+        btnSee.addEventListener('click', () => {
+            headerSee.classList.toggle('header_see')
+        })
+        colorBtn.addEventListener('click', () => {
+            paragraphColor.style.color = 'yellow'
+        })
+        btnHeaderText.addEventListener('click', () => {
+            headerSee.textContent = 'Привет мир!'
+        })
+        colorBtn.addEventListener('click', () => {
+            paragraphColor.style.color = 'yellow'
+        })
+        btnAddText.addEventListener('click', () => {
+            boxDiv.textContent = 'Новый абзац'
+            document.body.appendChild(boxDiv);
+        })
+        btnDelPph.addEventListener('click', () => {
+            const descriptionDel = document.querySelector('.description2')
+            descriptionDel.remove();
+            
+        })
+        
+    </script>
+</body>
+</html>
