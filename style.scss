@@ -1,0 +1,411 @@
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.5s;
+}
+$header-weight: 700;
+$h1-size: 64px;
+$h1-height: 78px;
+$h2-size: 48px;
+$h2-height: 59px;
+$h3-size: 32px;
+$h3-height: 39px;
+$text-weight: 400;
+$text-size: 24px;
+$text-height: 32px;
+$textBold-weight: 600;
+$textSmall-size: 24px;
+$first-color: rgb(32, 32, 39);
+$second-color:rgb(188, 236, 48);
+$third-color:rgb(225, 255, 143);
+$fourth-color:rgb(255, 255, 255);
+
+@keyframes anim-to-left {
+    from {
+        transform: translate(245%);
+    }
+    
+    to {
+        transform: translate(-245%);
+    }
+  }
+  @keyframes anim-to-left-mob {
+    from {
+        transform: translate(270%);
+    }
+    
+    to {
+        transform: translate(-270%);
+    }
+  }
+
+.content{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.header{
+    background-color: $third-color;
+    background-image: url(./img/head-bg.png), url(./img/head-bg-star.png), url(./img/head-bg-star1.png);
+    background-repeat: no-repeat;
+    background-position: right 0px, 70% 85%, 63px 69px;  
+    &__box{
+        padding-top: 196px;
+        padding-bottom: 156px;
+        max-width: 780px;
+    }
+    &__header{
+        font-size: $h1-size;
+        font-weight: $header-weight;
+        line-height: $h1-height;
+        padding-bottom: 24px;
+        color: $first-color;
+        max-width: 780px;
+        
+    }
+    &__paragraph{
+        font-size: $text-size;
+        font-weight: $text-weight;
+        line-height: $text-height;
+        padding-bottom: 48px;
+        max-width: 650px;
+        color: $first-color;
+    }
+    &__button{
+        font: inherit;
+        padding: 16px 65px 16px 65px;
+        border: 1px solid black;
+        border-radius: 60px;
+        background-color: $first-color;
+        color: $fourth-color;
+        outline: none;
+        font-weight: $textBold-weight;
+        text-decoration: none;
+        font-size: $text-size;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $fourth-color;
+            color: $first-color;
+            cursor: pointer;
+        }
+        &_mob{
+            display: none;
+            font: inherit;
+            padding: 16px 65px 16px 65px;
+            border: 1px solid black;
+            border-radius: 60px;
+            background-color: $first-color;
+            color: $fourth-color;
+            outline: none;
+            font-weight: $textBold-weight;
+            text-decoration: none;
+            font-size: $text-size;
+            transition: all 0.5s;
+        }
+
+
+    }
+}
+.headerFooter{
+    background-color: $second-color;
+    overflow: hidden;
+    &__animBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 51px;
+        animation: anim-to-left 30s infinite;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__game{
+        font-weight: $header-weight;
+        font-size: 30px;
+        white-space: nowrap;
+        
+
+    }
+    
+}
+.games{
+    background-color: $first-color;
+    background-image: url(./img/game-bg-star1.png), url(./img/game-bg-star2.png);
+    background-repeat: no-repeat;
+    background-position: right 15%, 25px 770px;
+    
+    &__header{
+        color: $fourth-color;
+        font-size: $h1-size;
+        font-weight: $header-weight;
+        line-height: $h1-height;
+        padding-top: 94px;
+        padding-bottom: 24px;
+    }
+    &__paragraph{
+        font-size: $text-size;
+        font-weight: $text-weight;
+        line-height: $text-height;
+        color: $fourth-color;
+        padding-bottom: 72px;
+        max-width: 700px;
+    }
+    &__table{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+    &__column{
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        
+    }
+    &__bg-img{
+        
+        background-image: url(./img/gm1.png);
+        background-color: rgb(173, 97, 255);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 314px;
+        border-radius: 30px;
+    }
+    &__number{
+        font-size: $textSmall-size;
+        color: $first-color;
+        font-weight: 500;
+        line-height: 110%;
+        padding-top: 40px;
+        padding-left: 48px;
+        padding-bottom: 26px;
+    }
+    &__name{
+        font-size: $h3-size;
+        font-weight: $header-weight;
+        line-height: $h3-height;
+        color: $first-color;
+        padding-left: 32px;
+        padding-bottom: 36px;
+        &_big{
+            width: 200px;
+        }
+    }
+    &__bg-img2{
+        
+        background-image: url(./img/gm2.png);
+        background-color:rgb(253, 173, 0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 314px;
+        border-radius: 30px;
+    }
+    &__bg-img3{
+        
+        background-image: url(./img/gm3.png);
+        background-color:rgb(86, 94, 239);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 314px;
+        border-radius: 30px;
+    }
+    &__bg-img4{
+        
+        background-image: url(./img/gm4.png);
+        background-color: rgb(39, 26, 88);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 314px;
+        border-radius: 30px;
+    }
+    &__bg-img5{
+        
+        background-image: url(./img/gm5.png);
+        background-color: rgb(153, 209, 0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 314px;
+        border-radius: 30px;
+    }
+    &__bg-img6{
+        
+        background-image: url(./img/gm6.png);
+        background-color: rgb(39, 26, 88);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 314px;
+        border-radius: 30px;
+    }
+    
+    &__box{
+        display: block;
+        background-color: $fourth-color;
+        border-radius: 30px;
+        transition: all 0.5s;
+        font: inherit;
+        text-decoration: none;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+   
+}
+.mini-games{
+    background-color: $first-color;
+    background-image: url(./img/mini-games-bg.png), url(./img/mini-games-bg2.png);
+    background-repeat: no-repeat;
+    background-position: 98% 4%, 98% 99%;
+    &__header{
+        color: $fourth-color;
+        font-size: $h1-size;
+        font-weight: $header-weight;
+        line-height: $h1-height;
+        padding-top: 96px;
+        padding-bottom: 72px;
+    }
+    &__table{
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        padding-bottom: 144px;
+        position: relative;
+    }
+    
+    &__box{
+        background-color: $fourth-color;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        &_revers{
+            background-color: $fourth-color;
+            border-radius: 30px;
+            display: flex;
+        }
+    }
+    &__description{
+        display: flex;
+        flex-direction: column;
+        padding-left: 48px;
+        &_revers{
+            padding-left: 48px;
+        }
+    }
+    &__name{
+        font-size: $h2-size;
+        font-weight: $header-weight;
+        line-height: $h2-height;
+        color: $first-color;
+        padding: 48px 48px 24px 0px ;
+    }
+    &__paragraph{
+        font-size: $text-size;
+        font-weight: $text-weight;
+        line-height: $text-height;
+        padding-bottom: 36px;
+        max-width: 420px;
+        color: $first-color;
+    }
+
+    &__button{
+        padding: 16px 75.5px 16px 75.5px;
+        font: inherit;
+        outline: none;
+        border: 1px solid $first-color;
+        background-color: $first-color;
+        color: $fourth-color;
+        border-radius: 60px;
+        max-width: 235px;
+        font-weight: $textBold-weight;
+        font-size: $text-size;
+        line-height: 141%;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $fourth-color;
+            color: $first-color;
+            cursor: pointer;
+        }
+    }
+    &__bg-img{
+        background-image: url(./img/mini-gm1.png);
+        background-color: rgb(173, 97, 255);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 500px;
+        width: 600px;
+        border-radius: 30px;
+    }
+    &__bg-img2{
+        background-image: url(./img/mini-gm2.png);
+        background-color:rgb(253, 173, 0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 500px;
+        width: 600px;
+        border-radius: 30px;
+    }
+    &__bg-img3{
+        background-image: url(./img/mini-gm3.png);
+        background-color:rgb(86, 94, 239);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 500px;
+        width: 600px;
+        border-radius: 30px;
+    }
+    &__bg-img4{
+        background-image: url(./img/mini-gm4.png);
+        background-color:rgb(153, 209, 0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 500px;
+        width: 600px;
+        border-radius: 30px;
+    }
+    &__bg-img5{
+        background-image: url(./img/mini-gm5.png);
+        background-color:rgb(39, 26, 88);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 500px;
+        width: 600px;
+        border-radius: 30px;
+    }
+    &__bg-img6{
+        background-image: url(./img/mini-gm6.png);
+        background-color:rgb(39, 26, 88);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 500px;
+        width: 600px;
+        border-radius: 30px;
+    }
+
+}
+.footer{
+    background-color: $second-color;
+    &__header{
+        font-size: $text-size;
+        font-weight: $textBold-weight;
+        line-height: 29px;
+        color: $first-color;
+        text-align: center;
+        
+        padding-top: 61px;
+        padding-bottom: 60px;
+    }
+}
+@import'phone';

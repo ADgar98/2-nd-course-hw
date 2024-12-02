@@ -1,0 +1,160 @@
+@media(max-width:767px){
+.header{
+    background-image: url(./img/head-bg-mob.png), url(./img/head-bg-mob1.png), url(./img/head-bg-mob2.png);
+    background-position: right 0, 37px 64px, 90% 95%;
+
+    &__box{
+        padding-top: 147px;
+        padding-bottom: 131px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header{      
+        line-height: 48px;
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 28px;
+
+    }
+    &__paragraph{
+        text-align: center;
+        font-size: 16px;
+        line-height: 19.5px;
+        max-width: 300px;
+        padding-bottom: 36px;
+    
+    }
+    &__button{
+        display: none;
+        &_mob{
+            display: block;
+            font-size: 16px;
+            line-height: 23px;
+            padding: 16px 103px 16px 103px;
+        }
+    }
+}
+.headerFooter{
+    
+    &__animBox{
+        animation: anim-to-left-mob 40s infinite;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        gap: 27px;
+    }
+    &__game{
+        font-size: 16px;
+    }
+    &__img{
+        height: 19px;
+    }
+}
+.games{
+    display: none;
+}
+.mini-games{
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__place{
+        width: 343px;
+    }
+    &__header{
+        font-size: 40px;
+        line-height: 49px;
+        text-align: start;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        
+    }
+    &__table{
+        align-items: center;
+        gap: 24px;
+        padding-bottom: 48px;
+    }
+    &__box{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 343px;
+        &_revers{
+            flex-direction: column;
+            width: 343px;
+        }
+
+    }
+    &__description{
+        padding-left: 29px;
+        padding-right: 29px;
+        &_revers{
+            padding-left: 29px;
+            padding-right: 29px;
+        }
+    }
+    &__name{
+        font-size: 32px;
+        line-height: 39px;
+        padding-bottom: 16px;
+        padding-top: 29px;
+    }
+    &__paragraph{
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 32px;
+        &_colors{
+            max-width: 240px;
+        }
+    }
+    &__button{
+        font-size: 16px;
+        max-width: 285px;
+        padding: 16px 105.5px 16px 105.5px;
+        margin-bottom: 32px;
+        text-align: center;
+        &:hover{
+            background-color: $first-color;
+            color: $fourth-color;
+        }
+    }
+    &__bg-img{
+        background-image: url(./img/gm1-mob.png);
+        max-width: 343px;
+        max-height: 285px;
+    }
+    &__bg-img2{
+        background-image: url(./img/gm2-mob.png);
+        max-width: 343px;
+        max-height: 285px;
+    }
+    &__bg-img3{
+        background-image: url(./img/gm3-mob.png);
+        max-width: 343px;
+        max-height: 285px;
+    }
+    &__bg-img4{
+        background-image: url(./img/gm4-mob.png);
+        max-width: 343px;
+        max-height: 285px;
+    }
+    &__bg-img5{
+        background-image: url(./img/gm5-mob.png);
+        max-width: 343px;
+        max-height: 285px;
+    }
+    &__bg-img6{
+        background-image: url(./img/gm6-mob.png);
+        max-width: 343px;
+        max-height: 285px;
+    }
+}
+.footer{
+    &__header{
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+}
