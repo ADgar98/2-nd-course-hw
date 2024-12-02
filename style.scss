@@ -54,7 +54,7 @@ $fourth-color:rgb(255, 255, 255);
     &__box{
         padding-top: 196px;
         padding-bottom: 156px;
-        max-width: 768px;
+        max-width: 780px;
     }
     &__header{
         font-size: $h1-size;
@@ -62,7 +62,7 @@ $fourth-color:rgb(255, 255, 255);
         line-height: $h1-height;
         padding-bottom: 24px;
         color: $first-color;
-        max-width: 660px;
+        max-width: 780px;
         
     }
     &__paragraph{
@@ -70,7 +70,7 @@ $fourth-color:rgb(255, 255, 255);
         font-weight: $text-weight;
         line-height: $text-height;
         padding-bottom: 48px;
-        max-width: 600px;
+        max-width: 650px;
         color: $first-color;
     }
     &__button{
